@@ -1,0 +1,28 @@
+header {
+  background-color: #5429CC;
+  padding-top: 32px;
+}
+
+.header-content {
+  height: 212px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-content-button {
+  background-color: #6933FF;
+  height: 48px;
+  width: 195px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-content-button:hover {
+  transition: background-color 0.2s;
+  background-color: #602deb;
+}
