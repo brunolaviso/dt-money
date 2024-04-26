@@ -6,24 +6,3 @@
   display: flex;
   gap: 32px;
 }
-
-.card {
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 32px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.card span {
-  color: #363F5F;
-}
-
-.card strong {
-  font-size: 36px;
-  font-weight: 400;
-  color: #363F5F;
-}
