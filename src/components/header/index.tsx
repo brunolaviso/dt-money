@@ -1,9 +1,16 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import logo from "./../../assets/logo.png";
 import "./header.css";
-import { X } from "lucide-react";
+import { X, ArrowUpCircle, ArrowDownCircle } from "lucide-react";
+import { useState } from "react";
 
 export function Header() {
+  const [selectedType, setSelectedType] = useState("");
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+  }
+
   return (
     <header>
       <div className="container header-content">
@@ -19,13 +26,33 @@ export function Header() {
                 <X />
               </button>
             </Dialog.Close>
-            <Dialog.Title>Cadastrar transação</Dialog.Title>
-            <div className="formulario">
+            <Dialog.Title className="dialog-title">
+              Cadastrar transação
+            </Dialog.Title>
+            <form onSubmit={handleSubmit}>
               <input type="text" placeholder="Nome" />
               <input type="text" placeholder="Preço" />
+              <div className="form-type">
+                <button
+                  className={selectedType === 'income' ? 'income' : ''}
+                  onClick={() => setSelectedType("income")}
+                  type="button"
+                >
+                  <ArrowUpCircle color="#12A454" />
+                  Entrada
+                </button>
+                <button
+                  className={selectedType === 'withdraw' ? 'withdraw' : ''}
+                  onClick={() => setSelectedType("withdraw")}
+                  type="button"
+                >
+                  <ArrowDownCircle color="#E52E4D" />
+                  Saída
+                </button>
+              </div>
               <input type="text" placeholder="Categoria" />
-              <button>Cadastrar</button>
-            </div>
+              <button type="submit">Cadastrar</button>
+            </form>
           </Dialog.Content>
         </Dialog.Root>
       </div>

@@ -46,6 +46,12 @@ header {
   transform: translateX(-50%)
 }
 
+.dialog-title {
+  color: #363F5F;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .button-close-dialog {
   border: none;
   background-color: transparent;
@@ -55,7 +61,7 @@ header {
   cursor: pointer;
 }
 
-.formulario {
+form {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -63,7 +69,7 @@ header {
   margin-top: 32px;
 }
 
-.formulario input {
+form input {
   height: 48px;
   border: 1px solid #d7d7d7;
   background: #F0F2F5;
@@ -71,7 +77,38 @@ header {
   padding: 0 16px;
 }
 
-.formulario button {
+.form-type {
+  display: flex;
+  gap: 8px;
+}
+
+.form-type button {
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  height: 48px;
+  border-radius: 4px;
+  color: #363F5F;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.form-type > .income {
+  background-color: #e8f8ef;
+  border-color: #12A454;
+
+}
+
+.form-type > .withdraw {
+  background-color: #f8eaed;
+  border-color: #E52E4D;
+}
+
+form > button {
   background-color: #33CC95;
   height: 48px;
   border: none;
