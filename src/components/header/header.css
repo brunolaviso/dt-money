@@ -26,3 +26,57 @@ header {
   transition: background-color 0.2s;
   background-color: #602deb;
 }
+
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog-content {
+  background-color: #ffffff;
+  width: 576px;
+  padding: 48px;
+  border-radius: 16px;
+  z-index: 10;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.button-close-dialog {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 32px;
+}
+
+.formulario input {
+  height: 48px;
+  border: 1px solid #d7d7d7;
+  background: #F0F2F5;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+
+.formulario button {
+  background-color: #33CC95;
+  height: 48px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
