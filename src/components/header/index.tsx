@@ -3,12 +3,23 @@ import logo from "./../../assets/logo.png";
 import "./header.css";
 import { X, ArrowUpCircle, ArrowDownCircle } from "lucide-react";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+
+interface Inputs {
+  name: string
+  price: string
+  category: string
+}
 
 export function Header() {
   const [selectedType, setSelectedType] = useState("");
+  const { register, handleSubmit } = useForm<Inputs>()
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  function createTransaction(data: Inputs) {
+    console.log({
+      ...data,
+      type: selectedType
+    })
   }
 
   return (
@@ -29,9 +40,9 @@ export function Header() {
             <Dialog.Title className="dialog-title">
               Cadastrar transação
             </Dialog.Title>
-            <form onSubmit={handleSubmit}>
-              <input type="text" placeholder="Nome" />
-              <input type="text" placeholder="Preço" />
+            <form onSubmit={handleSubmit(createTransaction)}>
+              <input type="text" placeholder="Nome" {...register("name")} />
+              <input type="text" placeholder="Preço" {...register("price")} />
               <div className="form-type">
                 <button
                   className={selectedType === 'income' ? 'income' : ''}
@@ -50,7 +61,7 @@ export function Header() {
                   Saída
                 </button>
               </div>
-              <input type="text" placeholder="Categoria" />
+              <input type="text" placeholder="Categoria" {...register("category")} />
               <button type="submit">Cadastrar</button>
             </form>
           </Dialog.Content>

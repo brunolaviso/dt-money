@@ -1,0 +1,52 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "date": "2024-01-01",
+      "category": "Alimentação",
+      "name": "Hambúrguer",
+      "price": "29.90",
+      "type": "withdraw"
+    },
+    {
+      "id": "2",
+      "date": "2024-01-02",
+      "category": "Salário",
+      "name": "Pagamento Mensal",
+      "price": "3000.00",
+      "type": "income"
+    },
+    {
+      "id": "3",
+      "date": "2024-01-03",
+      "category": "Transporte",
+      "name": "Uber",
+      "price": "15.50",
+      "type": "withdraw"
+    },
+    {
+      "id": "4",
+      "date": "2024-01-04",
+      "category": "Entretenimento",
+      "name": "Cinema",
+      "price": "45.00",
+      "type": "withdraw"
+    },
+    {
+      "id": "5",
+      "date": "2024-01-05",
+      "category": "Freelance",
+      "name": "Projeto Web",
+      "price": "1200.00",
+      "type": "income"
+    },
+    {
+      "id": "6",
+      "date": "2024-01-05",
+      "category": "Freelance",
+      "name": "Projeto Web",
+      "price": "1200.00",
+      "type": "income"
+    }
+  ]
+}
