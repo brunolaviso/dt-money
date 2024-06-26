@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
+    "axios": "^1.7.2",
     "json-server": "^1.0.0-beta.0",
     "lucide-react": "^0.378.0",
     "react": "^18.2.0",

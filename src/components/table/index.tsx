@@ -1,6 +1,16 @@
+import { useEffect, useState } from 'react';
 import './table.css'
+import { Transaction, getAllTransactions } from '../../api/transaction';
 
 export function Table() {
+  const [transactions, setTransactions] = useState<Transaction[]>([])
+
+  useEffect(() => {
+    getAllTransactions().then(setTransactions)
+  }, [])
+
+  console.log(transactions)
+
   return (
     <div className="table">
       <div className="container table-content">
