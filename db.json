@@ -41,12 +41,140 @@
       "type": "income"
     },
     {
-      "id": "6",
-      "date": "2024-01-05",
-      "category": "Freelance",
-      "name": "Projeto Web",
-      "price": "1200.00",
-      "type": "income"
+      "id": "7ksgqb0cq",
+      "name": "Lanche",
+      "price": "20",
+      "category": "comida",
+      "type": "withdraw",
+      "date": "2024-06-27T21:51:20.472Z"
+    },
+    {
+      "id": "nrmd0agc4",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:55:14.543Z"
+    },
+    {
+      "id": "9vvrn3lg1",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:55:17.261Z"
+    },
+    {
+      "id": "xafse7n4e",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:55:17.825Z"
+    },
+    {
+      "id": "vwpcy7gcv",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:55:18.280Z"
+    },
+    {
+      "id": "j0yvum4s4",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:40.831Z"
+    },
+    {
+      "id": "b1ragk0n1",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:41.141Z"
+    },
+    {
+      "id": "coxlmlm32",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:41.277Z"
+    },
+    {
+      "id": "bzei8u3jk",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:41.409Z"
+    },
+    {
+      "id": "61ls3wzc6",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:41.550Z"
+    },
+    {
+      "id": "vf4q4rbtg",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:41.666Z"
+    },
+    {
+      "id": "1tkm8soeo",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:41.806Z"
+    },
+    {
+      "id": "dlyxcd2jj",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:41.929Z"
+    },
+    {
+      "id": "538gw9tho",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:42.079Z"
+    },
+    {
+      "id": "rssxlr1o9",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:42.210Z"
+    },
+    {
+      "id": "t8fg0233k",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:42.341Z"
+    },
+    {
+      "id": "hod5oqkpu",
+      "name": "",
+      "price": "",
+      "category": "",
+      "type": "",
+      "date": "2024-06-27T21:56:42.490Z"
     }
   ]
 }

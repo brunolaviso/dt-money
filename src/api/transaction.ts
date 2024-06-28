@@ -14,3 +14,7 @@ export async function getAllTransactions() {
 
   return response.data
 }
+
+export async function createTransaction(data: Transaction) {
+  await api.post('/transactions', data)
+}

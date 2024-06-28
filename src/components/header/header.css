@@ -30,7 +30,7 @@ header {
 .dialog-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .dialog-content {
@@ -40,10 +40,10 @@ header {
   border-radius: 16px;
   z-index: 10;
 
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translate(-50%, -50%);
 }
 
 .dialog-title {

@@ -9,8 +9,6 @@ export function Table() {
     getAllTransactions().then(setTransactions)
   }, [])
 
-  console.log(transactions)
-
   return (
     <div className="table">
       <div className="container table-content">
@@ -24,18 +22,21 @@ export function Table() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Desenvolvimento de website</td>
-              <td className="deposit">R$ 12.000,00</td>
-              <td>Desenvolvimento</td>
-              <td>20/02/2021</td>
-            </tr>
-            <tr>
-              <td>Aluguel</td>
-              <td className="withdraw">- R$ 1.259,00</td>
-              <td>Casa</td>
-              <td>17/02/2021</td>
-            </tr>
+            {transactions.map((transaction) => {
+              return (
+                <tr key={transaction.id}>
+                  <td>{transaction.name}</td>
+                  <td className={transaction.type === 'income' ? 'income' : 'withdraw'}>
+                    {new Intl.NumberFormat('pt-BR', {
+                      style: 'currency',
+                      currency: 'BRL'
+                    }).format(Number(transaction.price))}
+                  </td>
+                  <td>{transaction.category}</td>
+                  <td>{new Date(transaction.date).toLocaleDateString()}</td>
+                </tr>
+              )
+            })}
           </tbody>
         </table>
       </div>
